@@ -1,4 +1,4 @@
-/* Morado #b31bfa claro  #d692f7*/
+/* Morado #b31bfa claro  #d692f7 mas claro #E6BBFA*/
 /* Azul #19a0fa claro  #b0ddfc*/
 /* Verde #2bc553 claro  #a3d5af*/
 
@@ -9,5 +9,44 @@
 
 header{
     height: 200px;
-    background-color: #d692f7;
+    background-color: #E6BBFA;
+}
+
+ul, ol {
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    background-color:#000;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+
+.nav li a:hover {
+    background-color:#434343;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
 }
