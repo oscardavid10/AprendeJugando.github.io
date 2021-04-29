@@ -2,6 +2,11 @@
 /* Azul #19a0fa claro  #b0ddfc*/
 /* Verde #2bc553 claro  #a3d5af*/
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header{
     height: 200px;
     background-color: #d692f7;
