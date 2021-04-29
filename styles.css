@@ -26,9 +26,16 @@ footer {
     color: white;
 }
 
+.logo_principal{
+    height: 180px;
+    width: auto;
+    padding: 10px;
+}
+
 header{
     height: 200px;
-    background-color: #E6BBFA;
+    background-color: #9663ad;
+
 }
 
 #header {
