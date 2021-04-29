@@ -45,6 +45,10 @@ ul, ol {
     float:left;
 }
 
+ul.nav {
+    width: 100%; 
+}
+
 .nav li a {
     background-color:#000;
     color:#fff;
