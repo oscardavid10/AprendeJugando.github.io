@@ -1,37 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>Aprende Jugando</title>
-    </head>
-    <body>
-        <header>
-            <img class="logo_principal" align="left" src="imagenes/Logo1.png" alt="Logotipo">
-            <h1>Aprende Jugando</h1>
-        </header>
-        <div id="header">
-            <nav>
-                <ul class="nav">
-                    <li><a href="#">Tutoriales Web-Html</a></li>
-                    <li><a href="#">Tutoriales Juegos Android</a></li>
-                    <li><a href="#">Tutoriales Java para principiantes</a></li>
-                    <li><a href="#">Tutoriales Sql</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-        <section>
-            <img src="" alt="">
-        </section>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <title>Aprende Jugando</title>
+</head>
 
-        <p>Este es mi primer pagina web</p>
-        <footer>
-            <p>(c) 2010 The Example company
-        </footer>
-    </body>
+<body>
+    <header>
+        <img class="logo_principal" align="left" src="imagenes/Logo1.png" alt="Logotipo">
+        <h1>Aprende Jugando</h1>
+    </header>
+    <div id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contactanos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" src="imagenes/juegos-didacticos.jpg" alt="">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Juegos para todos</h1>
+                        <p>El mayor mercado de juguetes didacticos para toda la familia</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Leer más</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Diseña tu estilo</h1>
+                        <p>Diseña tus propios juguetes y divierte aprendiendo</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Leer más</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>Lo mejor de lo mejor</h1>
+                        <p>Contamos con los mejores equipos para aprender.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Ver galeria</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <footer>
+        <p>(c) 2010 The Example company
+    </footer>
+</body>
 
 </html>
